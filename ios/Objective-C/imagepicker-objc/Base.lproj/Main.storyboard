@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="L5o-lF-hLz">
-    <device id="retina5_9" orientation="portrait">
+    <device id="retina3_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -18,28 +18,28 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="TUx-as-Jf3">
-                                <rect key="frame" x="67.666666666666686" y="111" width="241" height="205"/>
+                                <rect key="frame" x="40.5" y="87" width="241" height="205"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="205" id="40n-6q-MIR"/>
                                     <constraint firstAttribute="width" constant="241" id="qRu-Iu-Nhm"/>
                                 </constraints>
                             </imageView>
                             <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="NmY-y2-By2">
-                                <rect key="frame" x="177.66666666666666" y="233" width="20" height="20"/>
+                                <rect key="frame" x="150.5" y="209" width="20" height="20"/>
                             </activityIndicatorView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KtP-oa-baM">
-                                <rect key="frame" x="91.666666666666686" y="642" width="193" height="30"/>
+                                <rect key="frame" x="63.5" y="344" width="193" height="30"/>
                                 <state key="normal" title="Choose an image to analyze"/>
                                 <connections>
                                     <action selector="loadImageButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WJ3-lX-XsE"/>
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="gsl-IP-xdD">
-                                <rect key="frame" x="0.0" y="88" width="375" height="141"/>
+                                <rect key="frame" x="0.0" y="64" width="320" height="141"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="141" id="qti-tH-2y1"/>
@@ -48,15 +48,15 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="fpo-yh-4NM">
-                                <rect key="frame" x="0.0" y="268" width="375" height="321"/>
+                                <rect key="frame" x="0.0" y="244" width="320" height="47"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k2K-pv-N5s">
-                                <rect key="frame" x="145.66666666666666" y="686" width="85" height="106"/>
+                                <rect key="frame" x="128.5" y="410" width="63" height="50"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="85" id="wRc-sI-SP4"/>
+                                    <constraint firstAttribute="width" constant="63" id="wRc-sI-SP4"/>
                                 </constraints>
                                 <state key="normal" title="Take a picture" image="Screen Shot 2018-01-07 at 6.37.42 PM.png"/>
                                 <connections>
@@ -76,7 +76,7 @@
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="KtP-oa-baM" secondAttribute="bottom" constant="106" id="Lhw-MM-rjx"/>
                             <constraint firstItem="gsl-IP-xdD" firstAttribute="trailing" secondItem="fpo-yh-4NM" secondAttribute="trailing" id="QDm-8x-olb"/>
                             <constraint firstItem="gsl-IP-xdD" firstAttribute="centerX" secondItem="NmY-y2-By2" secondAttribute="centerX" id="Tzk-Zo-tff"/>
-                            <constraint firstItem="k2K-pv-N5s" firstAttribute="top" secondItem="KtP-oa-baM" secondAttribute="bottom" constant="14" id="UB4-eJ-L0p"/>
+                            <constraint firstItem="k2K-pv-N5s" firstAttribute="top" secondItem="KtP-oa-baM" secondAttribute="bottom" constant="36" id="UB4-eJ-L0p"/>
                             <constraint firstItem="TUx-as-Jf3" firstAttribute="centerX" secondItem="NmY-y2-By2" secondAttribute="centerX" id="YWh-7u-b2Y"/>
                             <constraint firstItem="KtP-oa-baM" firstAttribute="top" secondItem="fpo-yh-4NM" secondAttribute="bottom" constant="53" id="awn-BG-T2U"/>
                             <constraint firstAttribute="bottom" secondItem="k2K-pv-N5s" secondAttribute="bottom" constant="20" symbolic="YES" id="f3L-sT-dM8"/>
@@ -94,7 +94,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1260" y="436.69950738916259"/>
+            <point key="canvasLocation" x="1260" y="436.25"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="hwJ-T3-TSK">
@@ -102,7 +102,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="L5o-lF-hLz" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="qBh-bE-Dqg">
-                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
