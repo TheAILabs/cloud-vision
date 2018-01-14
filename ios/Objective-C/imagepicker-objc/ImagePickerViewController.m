@@ -16,6 +16,7 @@
 
 @interface ImagePickerViewController ()
 
+
 @end
 
 @implementation ImagePickerViewController
@@ -28,6 +29,9 @@
     [self presentViewController:imagePicker animated:true completion:NULL];
     
 }
+
+
+
 
 - (IBAction)loadImageFromCamera:(UIButton *)sender {
     UIImagePickerController *imagePicker = [[UIImagePickerController alloc] init];
