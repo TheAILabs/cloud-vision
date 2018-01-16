@@ -152,19 +152,6 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1ds-je-Oed">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="210"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uR9-sG-gLd">
-                                <rect key="frame" x="16" y="296" width="0.0" height="0.0"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ji2-tM-xJc">
-                                <rect key="frame" x="51" y="247" width="170" height="0.0"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" adjustsFontForContentSizeCategory="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yZy-5T-s5d">
                                 <rect key="frame" x="0.0" y="210" width="320" height="270"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -178,15 +165,12 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="mBK-4c-mLV" firstAttribute="top" secondItem="1ds-je-Oed" secondAttribute="bottom" constant="17" id="11G-lI-9DK"/>
                             <constraint firstItem="1ds-je-Oed" firstAttribute="leading" secondItem="HZU-Eb-UcW" secondAttribute="leading" id="1o6-td-E1Y"/>
                             <constraint firstItem="PuU-wz-Hzy" firstAttribute="top" secondItem="yZy-5T-s5d" secondAttribute="bottom" id="2EL-Qh-JaP"/>
                             <constraint firstAttribute="trailing" secondItem="1ds-je-Oed" secondAttribute="trailing" id="E5F-OP-R1b"/>
-                            <constraint firstItem="Ji2-tM-xJc" firstAttribute="leading" secondItem="HZU-Eb-UcW" secondAttribute="leadingMargin" constant="35" id="Frp-nU-LmU"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="Ji2-tM-xJc" secondAttribute="trailing" constant="83" id="Gbr-wp-tRb"/>
                             <constraint firstItem="yZy-5T-s5d" firstAttribute="trailing" secondItem="1ds-je-Oed" secondAttribute="trailing" id="K1W-C7-Obh"/>
-                            <constraint firstItem="Ji2-tM-xJc" firstAttribute="bottom" secondItem="mBK-4c-mLV" secondAttribute="bottom" id="TXE-aR-joe"/>
                             <constraint firstItem="yZy-5T-s5d" firstAttribute="top" secondItem="1ds-je-Oed" secondAttribute="bottom" id="Ym5-Ic-DdU"/>
-                            <constraint firstItem="Ji2-tM-xJc" firstAttribute="top" secondItem="1ds-je-Oed" secondAttribute="bottom" constant="37" id="b3D-V4-OQE"/>
                             <constraint firstItem="yZy-5T-s5d" firstAttribute="centerX" secondItem="mBK-4c-mLV" secondAttribute="centerX" id="elC-jA-dKD"/>
                             <constraint firstItem="1ds-je-Oed" firstAttribute="top" secondItem="HZU-Eb-UcW" secondAttribute="top" id="hRT-5r-10A"/>
                             <constraint firstItem="yZy-5T-s5d" firstAttribute="leading" secondItem="1ds-je-Oed" secondAttribute="leading" id="mG1-np-4oc"/>
@@ -194,13 +178,14 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="plant" destination="yZy-5T-s5d" id="hYc-8Z-QmS"/>
-                        <outlet property="spinner" destination="mBK-4c-mLV" id="wDx-Cq-8an"/>
+                        <outlet property="plant" destination="yZy-5T-s5d" id="Vpm-n0-hpJ"/>
+                        <outlet property="plantView" destination="1ds-je-Oed" id="bD8-bv-uvr"/>
+                        <outlet property="spinner" destination="mBK-4c-mLV" id="UFa-oO-o5A"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="O8t-lS-N5t" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1942.5" y="438.38028169014086"/>
+            <point key="canvasLocation" x="2196" y="436"/>
         </scene>
     </scenes>
     <resources>
